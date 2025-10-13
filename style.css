@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: o;
+  padding: o;
+}
+:root {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62.5%;
+  --roboto-medium: 500;
+  --roboto-bold: 700;
+  --color-primary: #000000;
+  --color-secundary: #ffffff;
+  --color-tertiary: #626262;
+  --color-tertiary-variant: #4a4a4a;
+  --color-fourth: #6c933c;
+  --color-fourth-variant: #d9e4cc;
+}
