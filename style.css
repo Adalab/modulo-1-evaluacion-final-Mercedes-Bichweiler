@@ -1,19 +1,61 @@
 * {
   box-sizing: border-box;
-  margin: o;
-  padding: o;
+  margin: 0;
+  padding: 0;
 }
 :root {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Roboto Slab", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 62.5%;
   --roboto-medium: 500;
   --roboto-bold: 700;
+  --roboto-slab: "Roboto Slab", sans-serif;
   --color-primary: #000000;
   --color-secundary: #ffffff;
   --color-tertiary: #626262;
   --color-tertiary-variant: #4a4a4a;
   --color-fourth: #6c933c;
   --color-fourth-variant: #d9e4cc;
+}
+.header-menu {
+  background-color: var(--color-fourth);
+  padding: 1rem;
+  position: fixed;
+  z-index: 999;
+  height: auto;
+  top: 0;
+}
+.shared-fund {
+  background-image: url(./img/cover.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 80% center;
+  background-attachment: scroll;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  width: 100%;
+}
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-title {
+  padding-top: 40rem;
+  color: var(--color-secundary);
+  font-family: var(--roboto-slab);
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.hero-text {
+  font-size: 1.6rem;
+  color: var(--color-secundary);
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 }
