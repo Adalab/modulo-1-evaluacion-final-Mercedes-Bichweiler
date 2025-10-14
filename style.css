@@ -4,12 +4,13 @@
   padding: 0;
 }
 :root {
-  font-family: "Roboto", "Roboto Slab", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 62.5%;
   --roboto-medium: 500;
   --roboto-bold: 700;
+  --roboto-regular: "Roboto", sans-serif;
   --roboto-slab: "Roboto Slab", sans-serif;
   --color-primary: #000000;
   --color-secundary: #ffffff;
@@ -46,7 +47,8 @@
   text-align: center;
 }
 .hero-title {
-  padding-top: 40rem;
+  padding-top: 50rem;
+  padding-bottom: 2rem;
   color: var(--color-secundary);
   font-family: var(--roboto-slab);
   font-size: 3rem;
@@ -54,8 +56,63 @@
 }
 .hero-text {
   font-size: 1.6rem;
+  font-family: var(--roboto-regular);
   color: var(--color-secundary);
   display: flex;
   flex-direction: column;
   width: 80%;
+}
+.hero-container-img {
+  padding: 2rem;
+}
+.hero-img {
+  width: 3.8rem;
+  height: 3.8rem;
+  flex-grow: 0;
+  margin: 3.4rem 14.9rem o 9.5rem;
+  transform: rotate(-0.23deg);
+  border-radius: 22.5px;
+  background-color: var(--color-secundary);
+  padding: 1rem;
+}
+.store {
+  padding-left: 1.3rem;
+  padding-top: 3.4rem;
+  padding-right: 1.8rem;
+  padding-bottom: 4rem;
+}
+
+.store-intro {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: var(--color-fourth);
+  padding-bottom: 1rem;
+}
+
+.store-title {
+  text-transform: uppercase;
+  font-family: var(--roboto-slab);
+  font-size: 2.2rem;
+  color: var(--color-primary);
+  padding-bottom: 1rem;
+}
+.store-text {
+  font-size: 1.8rem;
+  color: var(--color-tertiary-variant);
+  font-family: var(--roboto-regular);
+  font-weight: 300;
+  display: inline-block;
+  text-wrap: balance;
+  padding-bottom: 4rem;
+}
+.store-button {
+  background-color: var(--color-secundary);
+  font-family: var(--roboto-medium);
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 3rem;
+  color: var(--color-fourth);
+  border: 2px solid var(--color-fourth);
+  border-radius: 22.5%;
 }
