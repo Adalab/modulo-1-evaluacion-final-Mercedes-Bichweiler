@@ -200,6 +200,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  text-align: center;
 }
 .nav-link {
   color: var(--color-secundary);
@@ -208,4 +209,18 @@
   font-size: 1.6rem;
   text-transform: uppercase;
   text-decoration: none;
+}
+.footer {
+  background-color: var(--color-tertiary-variant);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+  font-family: var(--roboto-regular);
+  font-size: 1.4rem;
+  color: var(--color-secundary);
+  text-transform: lowercase;
+  gap: 1rem;
+  padding-top: 2rem;
 }
