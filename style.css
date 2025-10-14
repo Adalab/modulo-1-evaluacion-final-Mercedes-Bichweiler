@@ -118,11 +118,24 @@
 .school {
   background-color: var(--color-fourth-variant);
   padding-inline: 2rem;
+}
+.school-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.school-container {
+  text-align: center;
+}
+
+/*.school {
+  background-color: var(--color-fourth-variant);
+  padding-inline: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+}*/
 .school-text {
   p {
     color: var(--color-tertiary);
@@ -145,11 +158,11 @@
 .school-img {
   width: 12.4rem;
   height: 12.4rem;
-  display: flex;
+  /*display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-grow: 0;
+  flex-grow: 0;*/
   object-fit: contain;
   border-radius: 50%;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
