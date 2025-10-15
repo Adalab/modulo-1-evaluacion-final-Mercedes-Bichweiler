@@ -16,11 +16,13 @@
     <div class="shared-fund">
       <header>
         <div class="header">
-          <img class="header-menu" src="./img/ico-menu.svg" alt="Menu icon" />
+          <a href="https://adalab.es.">
+            <img class="header-menu" src="./img/ico-menu.svg" alt="Menu icon" />
+          </a>
         </div>
       </header>
       <main>
-        <section class="hero">
+        <section id="hero" class="hero">
           <h1 class="hero-title">
             <p>Comienzos</p>
             <p>Compartidos</p>
@@ -31,17 +33,19 @@
           </div>
           <!--IMAGEN COMO BACKGROUND EN CSS <img src="./img/cover.jpeg" alt="Niña jugando a la pelota" />-->
           <div class="hero-container-img">
-            <img
-              class="hero-img"
-              src="./img/ico-scroll-down.svg"
-              alt="Scroll down"
-            />
+            <a href="#store">
+              <img
+                class="hero-img"
+                src="./img/ico-scroll-down.svg"
+                alt="Scroll down"
+              />
+            </a>
           </div>
         </section>
       </main>
     </div>
     <section>
-      <article class="store">
+      <article id="store" class="store">
         <p class="store-intro">Historias, moda y ropa deportiva</p>
         <h2 class="store-title">Tu tienda de deporte</h2>
         <p class="store-text">
@@ -84,33 +88,41 @@
         </div>
         <button class="school-button">Empezar ahora</button>
       </article>
-      <article class="nav">
-        <div>
-          <img class="nav-img" src="./img/ico-arrow.svg" alt="Flecha arriba" />
-        </div>
-        <nav>
-          <ul class="nav-list">
-            <li>
-              <a class="nav-link" href="https://adalab.es.">Zapatillas</a>
-            </li>
-            <li><a class="nav-link" href="https://adalab.es.">Ropa</a></li>
-            <li><a class="nav-link" href="https://adalab.es.">Niño/a</a></li>
-            <li>
-              <a class="nav-link" href="https://adalab.es.">Destacados</a>
-            </li>
-            <li><a class="nav-link" href="https://adalab.es.">Tips</a></li>
-          </ul>
-          <ul class="nav-list">
-            <li><a class="nav-link" href="https://adalab.es.">Twitter</a></li>
-            <li><a class="nav-link" href="https://adalab.es.">Intagram</a></li>
-            <li><a class="nav-link" href="https://adalab.es.">Youtube</a></li>
-          </ul>
-        </nav>
-      </article>
     </section>
     <footer class="footer">
-      <div>&copy2025</div>
-      <p>We💚run</p>
+      <div class="footer-img">
+        <a href="#hero">
+          <img class="nav-img" src="./img/ico-arrow.svg" alt="Flecha arriba" />
+        </a>
+      </div>
+      <section class="nav">
+        <nav>
+          <div class="nav-grid">
+            <ul class="nav-list">
+              <li>
+                <a class="nav-link" href="https://adalab.es.">Zapatillas</a>
+              </li>
+              <li><a class="nav-link" href="https://adalab.es.">Ropa</a></li>
+              <li><a class="nav-link" href="https://adalab.es.">Niño/a</a></li>
+              <li>
+                <a class="nav-link" href="https://adalab.es.">Destacados</a>
+              </li>
+              <li><a class="nav-link" href="https://adalab.es.">Tips</a></li>
+            </ul>
+            <ul class="nav-list">
+              <li><a class="nav-link" href="https://adalab.es.">Twitter</a></li>
+              <li>
+                <a class="nav-link" href="https://adalab.es.">Intagram</a>
+              </li>
+              <li><a class="nav-link" href="https://adalab.es.">Youtube</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="copy">
+          <div>&copy2025</div>
+          <p>We💚run</p>
+        </div>
+      </section>
     </footer>
   </body>
 </html>

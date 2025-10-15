@@ -19,6 +19,9 @@
   --color-fourth: #6c933c;
   --color-fourth-variant: #d9e4cc;
 }
+html {
+  scroll-behavior: smooth;
+}
 .header-menu {
   background-color: var(--color-fourth);
   padding: 1rem;
@@ -103,6 +106,7 @@
   display: inline-block;
   text-wrap: balance;
   padding-bottom: 4rem;
+  line-height: 1.5;
 }
 .store-button {
   background-color: var(--color-secundary);
@@ -118,6 +122,7 @@
 .school {
   background-color: var(--color-fourth-variant);
   padding-inline: 2rem;
+  padding-bottom: 3rem;
 }
 .school-grid {
   display: grid;
@@ -186,8 +191,22 @@
   color: var(--color-secundary);
   border: none;
   border-radius: 999px;
-  margin-bottom: 3rem;
+  margin-left: 9rem;
 }
+.footer {
+  background-color: var(--color-tertiary-variant);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+  font-family: var(--roboto-regular);
+  font-size: 1.4rem;
+  color: var(--color-secundary);
+  text-transform: lowercase;
+  gap: 1rem;
+}
+/*
 .nav {
   background-color: var(--color-tertiary-variant);
   padding-inline: 2rem;
@@ -195,7 +214,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+}*/
 .nav-img {
   width: 3.8rem;
   height: 3.8rem;
@@ -223,17 +242,68 @@
   text-transform: uppercase;
   text-decoration: none;
 }
-.footer {
-  background-color: var(--color-tertiary-variant);
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  padding-bottom: 4rem;
-  font-family: var(--roboto-regular);
-  font-size: 1.4rem;
-  color: var(--color-secundary);
-  text-transform: lowercase;
-  gap: 1rem;
-  padding-top: 2rem;
+
+@media (width >768px) {
+  .hero-title {
+    font-size: 7.5rem;
+    padding-top: 65rem;
+  }
+  .hero-text {
+    font-size: 2.4rem;
+  }
+  .hero-container-img {
+    padding-bottom: 2rem;
+  }
+  .store {
+    padding-left: 4rem;
+  }
+  .store-intro {
+    font-size: 1.6rem;
+  }
+  .store-title {
+    font-size: 3.2rem;
+  }
+  .store-text {
+    font-size: 2rem;
+  }
+  .school-title {
+    font-size: 2.8rem;
+  }
+  .school-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .school-button {
+    margin-left: 27rem;
+  }
+  .nav-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    padding-left: 34rem;
+  }
+  .copy {
+    display: flex;
+    flex-direction: column;
+    padding-inline-end: 45rem;
+    order: -1;
+  }
+
+  /*.nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 16rem;
+    padding-top: 3rem;
+  }
+  .nav-list {
+    text-align: start;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }*/
+}
+@media (width >1024px) {
+  .store {
+    padding: 8rem;
+  }
 }
