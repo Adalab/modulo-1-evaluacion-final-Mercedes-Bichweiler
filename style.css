@@ -132,15 +132,6 @@ html {
 .school-container {
   text-align: center;
 }
-
-/*.school {
-  background-color: var(--color-fourth-variant);
-  padding-inline: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}*/
 .school-text {
   p {
     color: var(--color-tertiary);
@@ -163,11 +154,6 @@ html {
 .school-img {
   width: 12.4rem;
   height: 12.4rem;
-  /*display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 0;*/
   object-fit: contain;
   border-radius: 50%;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -185,13 +171,12 @@ html {
   background-color: var(--color-fourth);
   font-family: var(--roboto-medium);
   font-size: 2rem;
-  display: flex;
-  justify-content: center;
+  display: block;
   padding: 1rem 3rem;
+  margin: 2rem auto 0 auto;
   color: var(--color-secundary);
   border: none;
   border-radius: 999px;
-  margin-left: 9rem;
 }
 .footer {
   background-color: var(--color-tertiary-variant);
@@ -206,16 +191,7 @@ html {
   text-transform: lowercase;
   gap: 1rem;
 }
-/*
-.nav {
-  background-color: var(--color-tertiary-variant);
-  padding-inline: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}*/
-.nav-img {
+.footer-nav-img {
   width: 3.8rem;
   height: 3.8rem;
   flex-grow: 0;
@@ -225,7 +201,7 @@ html {
   padding: 1rem;
   margin-top: -1.5rem;
 }
-.nav-list {
+.footer-nav-list {
   list-style-type: none;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -234,7 +210,7 @@ html {
   gap: 1rem;
   text-align: center;
 }
-.nav-link {
+.footer-nav-link {
   color: var(--color-secundary);
   font-family: var(--roboto-regular);
   font-weight: 300;
@@ -272,35 +248,14 @@ html {
   .school-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .school-button {
-    margin-left: 27rem;
-  }
-  .nav-grid {
-    display: flex;
-    flex-direction: row;
-    gap: 8rem;
-    padding-left: 34rem;
-  }
-  .copy {
-    display: flex;
-    flex-direction: column;
-    padding-inline-end: 45rem;
-    order: -1;
-  }
-
-  /*.nav-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 16rem;
-    padding-top: 3rem;
-  }
-  .nav-list {
-    text-align: start;
-  }
-  .footer {
-    display: grid;
-    grid-template-columns: 1fr;
-  }*/
+}
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer-copy {
+  order: -1;
 }
 @media (width >1024px) {
   .store {
